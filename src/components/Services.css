@@ -1,0 +1,26 @@
+.services-container {
+  /* margin-top: 50px; */
+  text-align: center;
+  padding: 0 50px;
+}
+.services-header {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+.services-head {
+  font-family: "Karla", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.border-bottom {
+  width: 20%;
+  border: 1.5px solid;
+  border-color: #e36262;
+  margin: 0 auto;
+}
+.services-body {
+  margin-top: 20px;
+  color: #888888;
+  line-height: 1.5;
+}

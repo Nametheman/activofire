@@ -1,0 +1,39 @@
+.about-container {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 1px;
+  height: 400px;
+  background: linear-gradient(rgba(35, 35, 35, 0.901), #1d1e1e),
+    url(/src/Images/activo.jpg);
+  background-size: cover;
+  background-position: center;
+  /* animation: fall 4s infinite linear; */
+  position: relative;
+}
+
+.about-container h3 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 50px;
+}
+.about-container h2 {
+  color: #ffffff;
+}
+.about-container p {
+  color: #ffffff;
+  margin-top: 40px;
+}
+.about-statements {
+  text-align: justify;
+  display: flex;
+  align-items: center;
+}
+
+.about-statements .first {
+  padding: 0 20px 0 150px;
+  line-height: 1.6;
+}
+.about-statements .second {
+  padding: 0 150px 0 20px;
+  line-height: 1.6;
+}

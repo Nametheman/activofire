@@ -1,5 +1,5 @@
 .carousel {
-  height: 96vh;
+  height: 700px;
 }
 
 .imageContainer {
@@ -12,6 +12,7 @@
 }
 .imageContainer.active {
   width: 100%;
+  max-width: 1280px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,6 +30,7 @@
 }
 .cta {
   position: absolute;
+  max-width: 1280px;
   top: 0;
   background-color: rgba(0, 0, 0, 0.768);
   width: 100%;
@@ -53,20 +55,21 @@
   position: relative;
   font-size: 10px;
   line-height: 1px;
+  letter-spacing: 1.8px;
 }
 .logo p::after {
   position: absolute;
-  width: 20px;
+  width: 12px;
   content: "";
-  background-color: #f9b2aa;
+  background-color: #ffffff;
   height: 1px;
   right: 3px;
 }
 .logo p::before {
   position: absolute;
-  width: 20px;
+  width: 12px;
   content: "";
-  background-color: #f9b2aa;
+  background-color: #ffffff;
   height: 1px;
   left: 3px;
 }

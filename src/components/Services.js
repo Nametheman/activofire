@@ -1,13 +1,14 @@
 import React, { Fragment } from "react";
+import "./Services.css";
 
 const Services = () => {
   return (
     <Fragment>
-      <div>
-        <h3>WHAT OUR SERVICES OFFER YOU</h3>
-
-        <h2>Fire Protection</h2>
-        <p>
+      <div className="services-container">
+        <h3 className="services-header">WHAT OUR SERVICES OFFER YOU</h3>
+        <h2 className="services-head">Fire Protection</h2>
+        <hr className="border-bottom" />
+        <p className="services-body">
           Fire protection refers to the measures taken to prevent a fire from
           starting or spreading, as well as the systems and equipment used to
           protect people and property from the effects of a fire. At Activo Fire
@@ -17,8 +18,9 @@ const Services = () => {
           identify potential fire hazards in your facility and develop a
           customized plan to reduce the risk of fire and protect your assets.
         </p>
-        <h2>Fire Suppression</h2>
-        <p>
+        <h2 className="services-head">Fire Suppression</h2>
+        <hr className="border-bottom" />
+        <p className="services-body">
           Fire suppression refers to the use of various methods to extinguish a
           fire once it has started. These methods can include the use of water,
           foam, dry chemicals, or other fire-extinguishing agents. At Activo
@@ -27,8 +29,9 @@ const Services = () => {
           extinguishers, and fire suppression systems for specialized
           environments such as computer server rooms and kitchen hoods
         </p>
-        <h2>Fire Detection</h2>
-        <p>
+        <h2 className="services-head">Fire Detection</h2>
+        <hr className="border-bottom" />
+        <p className="services-body">
           Fire detection refers to the use of sensors and alarms to alert people
           to the presence of a fire. These systems can include smoke detectors,
           heat detectors, and other types of sensors that are designed to detect
