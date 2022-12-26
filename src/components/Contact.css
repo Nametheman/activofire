@@ -95,6 +95,12 @@
 .swal2-container.swal2-top-right > .swal2-popup {
   height: 7em !important;
 }
+.swal2-container.swal2-top-end,
+.swal2-container.swal2-center-end,
+.swal2-container.swal2-bottom-end {
+  position: fixed !important;
+  z-index: 984875474547 !important;
+}
 .swal2-styled.swal2-confirm {
   display: none !important;
 }

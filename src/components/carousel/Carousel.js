@@ -48,7 +48,7 @@ const Carousel = () => {
 
   window.addEventListener("scroll", changeBackground);
   return (
-    <main className="carousel">
+    <main className="carousel" id="home">
       {imageData.map((image, index) => {
         return (
           <div

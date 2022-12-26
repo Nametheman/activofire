@@ -9,16 +9,16 @@ function App() {
   return (
     <main>
       <Carousel />
-      <section className="services">
+      <section className="services" id="services">
         <Services />
       </section>
-      <section className="about">
+      <section className="about" id="about">
         <About />
       </section>
-      <section className="contact">
+      <section className="contact" id="contact">
         <Contact />
       </section>
-      <section className="footer">
+      <section className="footer" id="footer">
         <Footer />
       </section>
     </main>
