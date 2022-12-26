@@ -97,7 +97,7 @@ const Carousel = () => {
           <div className="mobile-links">
             {links.map((link) => {
               return (
-                <a href={link.url} key={link.id}>
+                <a href={link.url} key={link.id} onClick={closeMenu}>
                   {link.text}
                 </a>
               );
