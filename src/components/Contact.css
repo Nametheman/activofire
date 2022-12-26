@@ -1,171 +1,239 @@
-@media only screen and (min-width: 1280px) {
-  .contact-section {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 0 60px;
-    gap: 20px;
-    justify-content: space-around;
-    margin-top: 50px;
+.contact-section {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 60px;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form h2 {
+  margin-bottom: 40px;
+  position: relative;
+}
+.contact-form h2::before {
+  position: absolute;
+  content: "";
+  background-color: #e36262;
+  width: 100px;
+  height: 3px;
+  bottom: 0;
+  top: 40px;
+}
+.contact-form form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  position: relative;
+}
+/* .contact-form form label::before {
+  position: absolute;
+  content: "";
+  background-color: #e36262;
+  height: 2.5px;
+  width: 50px;
+  bottom: 0;
+  top: 20px;
+} */
+.contact-form form input {
+  width: 400px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+.contact-form form input:focus,
+.contact-form form input:active {
+  outline: 1px solid #e36262;
+  border: none;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.contact-form form textarea:focus {
+  outline: 1px solid #e36262;
+  border: none;
+  border-radius: 2px;
+}
+.contact-form form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  resize: none;
+}
+.contact-form form .submit {
+  background-color: #e36262;
+  border: none;
+  color: aliceblue;
+  font-weight: 600;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.contact-form form .submit:hover {
+  background-color: black;
+  outline: none;
+}
+.textArea {
+  height: 200px;
+  width: 400px;
+}
+.mapContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contactMap {
+  border: 3px solid #000;
+  width: 550px;
+  height: 100%;
+}
+/* custom classes for sweet alert */
+
+.swal2-container.swal2-top-end > .swal2-popup,
+.swal2-container.swal2-top-right > .swal2-popup {
+  height: 7em !important;
+}
+.swal2-styled.swal2-confirm {
+  display: none !important;
+}
+.swal2-html-container {
+  margin-top: 25px !important;
+}
+
+.contact-info-section {
+  margin-top: 100px;
+  /* width: 80%; */
+  display: flex;
+  justify-content: space-around;
+}
+.contact-info-section .address {
+  width: 400px;
+}
+.address-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.contact-info-section .address h3 {
+  color: #e36262;
+  font-size: 16px;
+}
+.contact-info-section .address p {
+  /* width: 40%; */
+  font-size: 14px;
+  margin-top: 10px;
+}
+.contact-info-section .phone h3 {
+  color: #e36262;
+  font-size: 16px;
+}
+.contact-info-section .phone p {
+  font-size: 14px;
+}
+.phone-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.phone-details svg {
+  color: #000;
+  font-size: 13px;
+}
+.phone-details span {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.social h3 {
+  color: #e36262;
+  font-size: 16px;
+}
+.social-details {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.social-details span svg {
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.social-details span svg:hover {
+  font-size: 28px;
+}
+
+@media screen and (max-width: 985px) {
+  .contactMap {
+    width: 500px;
   }
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
+}
+@media screen and (max-width: 930px) {
+  .contactMap {
+    width: 450px;
   }
+}
+@media screen and (max-width: 880px) {
   .contact-form h2 {
-    margin-bottom: 40px;
-    position: relative;
+    font-size: 20px;
   }
   .contact-form h2::before {
-    position: absolute;
-    content: "";
-    background-color: #e36262;
-    width: 100px;
-    height: 3px;
-    bottom: 0;
-    top: 40px;
+    top: 28px;
   }
-  .contact-form form label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    position: relative;
-  }
-
   .contact-form form input {
-    width: 400px;
-    height: 40px;
-    margin-bottom: 20px;
-    padding-left: 15px;
-  }
-  .contact-form form input:focus,
-  .contact-form form input:active {
-    outline: 1px solid #e36262;
-    border: none;
-    border-radius: 2px;
-    background-color: #fff;
-  }
-  .contact-form form textarea:focus {
-    outline: 1px solid #e36262;
-    border: none;
-    border-radius: 2px;
-  }
-  .contact-form form textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    resize: none;
-  }
-  .contact-form form .submit {
-    background-color: #e36262;
-    border: none;
-    color: aliceblue;
-    font-weight: 600;
-    height: 50px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease-out;
-  }
-
-  .contact-form form .submit:hover {
-    background-color: black;
-    outline: none;
+    width: 350px;
   }
   .textArea {
-    height: 200px;
-    width: 400px;
+    width: 350px;
   }
-  .mapContainer {
-    width: 100%;
-    display: flex;
+}
+@media screen and (max-width: 780px) {
+  .contactMap {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .contact-section {
+    flex-direction: column;
     justify-content: center;
+    padding: 0;
+  }
+  .contact-form form {
+    align-items: center;
+  }
+  .contact-form h2 {
+    text-align: center;
   }
   .contactMap {
-    border: 3px solid #000;
-    width: 550px;
-    height: 100%;
+    height: 400px;
   }
-  /* custom classes for sweet alert */
-
-  .swal2-container.swal2-top-end > .swal2-popup,
-  .swal2-container.swal2-top-right > .swal2-popup {
-    height: 7em !important;
-  }
-  .swal2-styled.swal2-confirm {
-    display: none !important;
-  }
-  .swal2-html-container {
-    margin-top: 25px !important;
-  }
-
   .contact-info-section {
-    margin-top: 100px;
-    /* width: 80%; */
-    display: flex;
-    justify-content: space-around;
-  }
-  .contact-info-section .address {
-    width: 400px;
-  }
-  .address-details {
-    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
-    justify-content: space-around;
-    gap: 10px;
   }
-
-  .contact-info-section .address h3 {
-    color: #e36262;
-    font-size: 16px;
-  }
-  .contact-info-section .address p {
-    /* width: 40%; */
-    font-size: 14px;
-    margin-top: 10px;
-  }
+  .contact-info-section .address h3,
   .contact-info-section .phone h3 {
-    color: #e36262;
-    font-size: 16px;
-  }
-  .contact-info-section .phone p {
-    font-size: 14px;
-  }
-  .phone-details {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  .phone-details svg {
-    color: #000;
-    font-size: 13px;
-  }
-  .phone-details span {
-    height: 24px;
-    width: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #000;
-    border-radius: 50%;
+    text-align: center;
   }
   .social h3 {
-    color: #e36262;
-    font-size: 16px;
+    text-align: center;
+    margin: 20px 0 10px;
   }
   .social-details {
-    margin-top: 10px;
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-  }
-  .social-details span svg {
-    font-size: 22px;
-    cursor: pointer;
-    transition: 0.2s ease-in;
-  }
-  .social-details span svg:hover {
-    font-size: 28px;
+    margin-bottom: 20px;
   }
 }
-@media only screen and (max-width: 350px) {
+/* @media only screen and (max-width: 350px) {
   .contact-section {
     display: block;
     padding: 0;
@@ -232,17 +300,17 @@
   }
 }
 
-@media screen and (min-width: 350px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .contact-section {
     display: block;
     padding: 0;
   }
   .contact-form form input {
-    width: 80%;
+    width: 400px;
     height: 30px;
   }
   .contact-form form textarea {
-    width: 80%;
+    width: 400px;
   }
   .contact-form form {
     align-items: center;
@@ -294,7 +362,7 @@
     width: 0;
   }
   .contactMap {
-    width: 80%;
+    width: 400px;
     height: 500px;
   }
-}
+} */

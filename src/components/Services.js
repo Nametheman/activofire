@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <Fragment>
       <div className="services-container">
-        <h3 className="services-header">WHAT OUR SERVICES OFFER YOU</h3>
+        <h3 className="services-header">SERVICES WE OFFER YOU</h3>
         <h2 className="services-head">Fire Protection</h2>
         <hr className="border-bottom" />
         <p className="services-body">

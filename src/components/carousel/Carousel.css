@@ -37,8 +37,9 @@
   height: 540px;
 }
 .menu-btn {
-  position: absolute;
-  z-index: 100;
+  position: fixed;
+  z-index: 90910;
+  /* z-index: 100; */
   top: 10px;
   right: 5px;
   display: none;
@@ -54,6 +55,14 @@
   align-items: center;
   /* border: 1px solid; */
   padding: 17px 20px;
+  transition: 0.3s ease-in-out;
+}
+.nav.active {
+  position: fixed;
+  z-index: 90909;
+  width: 100%;
+  background: #1b1b1b;
+  transition: 0.3s ease-in;
 }
 .logo {
   text-align: center;
@@ -183,6 +192,54 @@
   padding: 15px 25px;
   transition: 0.3s ease-out;
 }
+.mobile-nav {
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  background-color: #3d3d3dfd;
+  width: 50%;
+  height: 100vh;
+  z-index: 900999990;
+  transition: 0.8s ease-in-out;
+}
+.mobile-nav-disabled {
+  transform: translateX(-50%);
+  display: none;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.close-btn svg {
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+}
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40%;
+  margin-left: 30px;
+  /* align-items: center; */
+  /* text-align: left; */
+}
+.mobile-links a {
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+}
+.mobile-links a::before {
+  position: absolute;
+  content: "";
+  background-color: #f9b2aa;
+  width: 40px;
+  height: 2px;
+  bottom: 0;
+  top: 25px;
+}
 
 @media screen and (max-width: 995px) {
   .cta-content h2 {
@@ -213,6 +270,9 @@
   }
   .menu-btn svg {
     font-size: 45px;
+  }
+  .mobile-nav {
+    display: block;
   }
 }
 
@@ -322,11 +382,17 @@
   .cta-content h2 {
     font-size: 26px;
   }
+  .mobile-nav {
+    display: block;
+  }
 }
 @media screen and (max-width: 400px) {
   .cta-content h2 {
     font-size: 24px;
     width: 95%;
+  }
+  .mobile-nav {
+    display: block;
   }
 }
 /* @media screen and (max-width: 350px) {

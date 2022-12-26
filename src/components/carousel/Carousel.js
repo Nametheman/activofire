@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
+import { MdClose } from "react-icons/md";
 import pic1 from "../../Images/fire1.jpeg";
 import pic2 from "../../Images/fire2.jpg";
 import pic3 from "../../Images/fire3.jpg";
@@ -16,6 +17,8 @@ const Carousel = () => {
   ];
 
   const [current, setCurrent] = useState(0);
+  const [mobileNav, setMobileNav] = useState(false);
+  const [navbar, setNavbar] = useState(false);
   const length = imageData.length;
 
   useEffect(() => {
@@ -28,6 +31,22 @@ const Carousel = () => {
     return null;
   }
 
+  const openMenu = () => {
+    setMobileNav(true);
+  };
+  const closeMenu = () => {
+    setMobileNav(false);
+  };
+
+  const changeBackground = () => {
+    if (window.scrollY >= 85) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
   return (
     <main className="carousel">
       {imageData.map((image, index) => {
@@ -44,10 +63,10 @@ const Carousel = () => {
         );
       })}
       <section className="cta">
-        <div className="menu-btn">
+        <div className="menu-btn" onClick={openMenu}>
           <BiMenuAltRight />
         </div>
-        <div className="nav">
+        <div className={navbar ? "nav active" : "nav"}>
           <div className="logo">
             <h3>Activo</h3>
             <p className="fire-science">FIRE SCIENCE</p>
@@ -66,6 +85,23 @@ const Carousel = () => {
             <a className="call-us" href="tel: +2348033907077">
               CALL US: 234-(803)-390-7077
             </a>
+          </div>
+        </div>
+        <div
+          className={mobileNav == false ? "mobile-nav-disabled" : "mobile-nav"}
+        >
+          <div className="close-btn" onClick={closeMenu}>
+            <MdClose />
+          </div>
+
+          <div className="mobile-links">
+            {links.map((link) => {
+              return (
+                <a href={link.url} key={link.id}>
+                  {link.text}
+                </a>
+              );
+            })}
           </div>
         </div>
         <div className="cta-content">
