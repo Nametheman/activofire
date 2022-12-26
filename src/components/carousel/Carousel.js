@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BiMenuAltRight } from "react-icons/bi";
 import pic1 from "../../Images/fire1.jpeg";
 import pic2 from "../../Images/fire2.jpg";
 import pic3 from "../../Images/fire3.jpg";
@@ -43,6 +44,9 @@ const Carousel = () => {
         );
       })}
       <section className="cta">
+        <div className="menu-btn">
+          <BiMenuAltRight />
+        </div>
         <div className="nav">
           <div className="logo">
             <h3>Activo</h3>
@@ -74,6 +78,9 @@ const Carousel = () => {
           <div className="readMoreContainer">
             <a className="read-more" href="#">
               Read More
+            </a>
+            <a className="call-us2" href="tel: +2348033907077">
+              CALL US: 234-(803)-390-7077
             </a>
           </div>
         </div>

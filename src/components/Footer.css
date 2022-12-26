@@ -1,0 +1,21 @@
+.footer-container {
+  margin-top: 40px;
+  background-color: #1d1d1d;
+  height: 100px;
+  padding-top: 30px;
+  /* width: 100%; */
+}
+.footer-container p {
+  font-size: 14px;
+  text-align: center;
+  color: #bcbcbc;
+}
+.footer-container .first {
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 350px) {
+  .footer-container p {
+    font-size: 12px;
+  }
+}
