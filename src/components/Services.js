@@ -1,14 +1,20 @@
 import React, { Fragment } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 import "./Services.css";
 
 const Services = () => {
+  AOS.init();
+
   return (
     <Fragment>
       <div className="services-container">
         <h3 className="services-header">SERVICES WE OFFER YOU</h3>
-        <h2 className="services-head">Fire Protection</h2>
+        <h2 className="services-head" data-aos="fade-up">
+          Fire Protection
+        </h2>
         <hr className="border-bottom" />
-        <p className="services-body">
+        <p className="services-body" data-aos="fade-up">
           Fire protection refers to the measures taken to prevent a fire from
           starting or spreading, as well as the systems and equipment used to
           protect people and property from the effects of a fire. At Activo Fire
@@ -18,9 +24,11 @@ const Services = () => {
           identify potential fire hazards in your facility and develop a
           customized plan to reduce the risk of fire and protect your assets.
         </p>
-        <h2 className="services-head">Fire Suppression</h2>
+        <h2 className="services-head" data-aos="fade-up">
+          Fire Suppression
+        </h2>
         <hr className="border-bottom" />
-        <p className="services-body">
+        <p className="services-body" data-aos="fade-up">
           Fire suppression refers to the use of various methods to extinguish a
           fire once it has started. These methods can include the use of water,
           foam, dry chemicals, or other fire-extinguishing agents. At Activo
@@ -29,9 +37,11 @@ const Services = () => {
           extinguishers, and fire suppression systems for specialized
           environments such as computer server rooms and kitchen hoods
         </p>
-        <h2 className="services-head">Fire Detection</h2>
+        <h2 className="services-head" data-aos="fade-up">
+          Fire Detection
+        </h2>
         <hr className="border-bottom" />
-        <p className="services-body">
+        <p className="services-body" data-aos="fade-up">
           Fire detection refers to the use of sensors and alarms to alert people
           to the presence of a fire. These systems can include smoke detectors,
           heat detectors, and other types of sensors that are designed to detect

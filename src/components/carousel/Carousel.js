@@ -106,10 +106,13 @@ const Carousel = () => {
         </div>
         <div className="cta-content">
           <p className="welcome">You are welcome to</p>
-          <h2>ACTIVO FIRE SCIENCE LTD.</h2>
+          <div className="companyName">
+            <h3>Activo</h3>
+            <p className="fireScience">FIRE SCIENCE</p>
+          </div>
           <p className="intro">
             We are a leading provider of fire protection systems, services, and
-            products for commercial and residential properties.
+            products for commercial and industrial properties.
           </p>
           <div className="readMoreContainer">
             <a className="read-more" href="#">
