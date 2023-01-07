@@ -423,8 +423,26 @@
     font-size: 24px;
     width: 95%;
   }
+  .companyName h3 {
+    font-size: 80px;
+  }
+  .fireScience::after,
+  .fireScience::before {
+    width: 40px;
+  }
+  .fireScience::before {
+    left: 45px;
+  }
+  .fireScience::after {
+    right: 45px;
+  }
   .mobile-nav {
     display: block;
+  }
+  .cta-content .intro {
+    margin: 20px auto;
+    font-size: 12px;
+    /* margin-left: auto; */
   }
 }
 /* @media screen and (max-width: 350px) {
