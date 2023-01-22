@@ -9,6 +9,8 @@ import testing from "../Images/fotos/2.jpg";
 import protocol from "../Images/fotos/3.jpg";
 import management from "../Images/fotos/4.jpg";
 import support from "../Images/fotos/5.jpg";
+import alarm from "../Images/fotos/6.png";
+import install from "../Images/fotos/7.jpeg";
 
 const ExtraServices = ({ isOpen, setIsOpen, clickHandler, children }) => {
   AOS.init();
@@ -43,6 +45,18 @@ const ExtraServices = ({ isOpen, setIsOpen, clickHandler, children }) => {
       image: support,
       title: " After Sales Support",
       body: "Activo do offer comprehensive after sales support and maintenance policies to ensure that its clients are fully satisfied with their products and services.",
+    },
+    {
+      id: "s6",
+      image: alarm,
+      title: "Fire Alarm Design Software",
+      body: " We have a track record of successfully designing and implementing fire alarm systems using 3D software, and are constantly seeking out ways to improve our  skills and stay up to date with the latest developments in the field",
+    },
+    {
+      id: "s7",
+      image: install,
+      title: "Procurement, Supply and Installation of Equipment",
+      body: " Activo is a company that is versatile in the procurement and installation of fire protection equipment.",
     },
   ];
 

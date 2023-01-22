@@ -325,6 +325,117 @@ const Modal = ({ setIsOpen, data, type }) => {
           </div>
         </div>
       )}
+      {type === "s6" && (
+        <div className={classes.darkBG} onClick={() => setIsOpen(false)}>
+          <div className={classes.centered}>
+            <div className={classes.modal}>
+              <div className={classes.modalHeader}></div>
+              <div className={classes.modalContent}>
+                <div className={classes.myHeader}>
+                  <img src={data.image} alt="" />
+                  <div className={classes.title}>
+                    <h3>{data.title}</h3>
+                    <p>
+                      We have a track record of successfully designing and
+                      implementing fire alarm systems using 3D software, and are
+                      constantly seeking out ways to improve our skills and stay
+                      up to date with the latest developments in the field.
+                    </p>
+                  </div>
+                </div>
+
+                <div className={classes.modalTexts}>
+                  <p>
+                    Activo engineers are highly competent in using 3D fire alarm
+                    design software. They have a strong understanding of the
+                    tools and features available in the software and are able to
+                    effectively design and layout fire alarm systems in 3D. They
+                    are able to create detailed diagrams and schematics,also
+                    proficient at simulating the operation of the system to test
+                    its functionality.
+                  </p>
+                  <br />
+                  <p>
+                    We have a track record of successfully designing and
+                    implementing fire alarm systems using 3D software, and are
+                    constantly seeking out ways to improve our skills and stay
+                    up to date with the latest developments in the field.
+                    Overall, our team are skilled and reliable professional in
+                    the area of 3D fire alarm design, we have a thorough
+                    understanding of the features and tools available in the
+                    software, and are able to effectively design and layout
+                    complex fire alarm systems in 3D, creating detailed diagrams
+                    and schematics,simulate the operation of the system to test
+                    its functionality.
+                  </p>
+                  <br />
+                  <p>
+                    we are skilled in using 3D fire alarm design software and is
+                    able to effectively apply this knowledge to their work.
+                  </p>
+                </div>
+              </div>
+              <button
+                className={classes.closeBtn}
+                onClick={() => setIsOpen(false)}
+              >
+                <RiCloseLine style={{ marginBottom: "-3px" }} />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      {type === "s7" && (
+        <div className={classes.darkBG} onClick={() => setIsOpen(false)}>
+          <div className={classes.centered}>
+            <div className={classes.modal}>
+              <div className={classes.modalHeader}></div>
+              <div className={classes.modalContent}>
+                <div className={classes.myHeader}>
+                  <img src={data.image} alt="" />
+                  <div className={classes.title}>
+                    <h3>{data.title}</h3>
+                    <p>
+                      Activo is a company that is versatile in the procurement
+                      and installation of fire protection equipment.
+                    </p>
+                  </div>
+                </div>
+
+                <div className={classes.modalTexts}>
+                  <p>
+                    Activo is a company that is versatile in the procurement and
+                    installation of fire protection equipment. They offer a wide
+                    range of products and services to ensure the safety of their
+                    clients' buildings and facilities.
+                  </p>
+                  <br />
+                  <p>
+                    From fire sprinkler systems and fire extinguishers to smoke
+                    detectors and alarms, Activo has the expertise and resources
+                    to design and install the right fire protection solutions
+                    for any project. Our in-house team of professionals is
+                    highly trained and experienced, and equally committed to
+                    providing top-quality service and support to their clients.
+                  </p>
+                  <br />
+                  <p>
+                    Whether you need a new fire protection system for a
+                    commercial building or an upgrade to an existing one, Activo
+                    has the knowledge and resources to get the job done right.
+                  </p>
+                </div>
+              </div>
+              <button
+                className={classes.closeBtn}
+                onClick={() => setIsOpen(false)}
+              >
+                <RiCloseLine style={{ marginBottom: "-3px" }} />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

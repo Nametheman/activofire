@@ -17,20 +17,27 @@ const About = () => {
           </div>
           <div className="about-statements">
             <p className="first" data-aos="fade-right">
-              Our services include fire safety assessments, design and
-              installation of fire protection systems, maintenance and testing
-              of existing systems, and emergency response and repair. We offer a
-              range of fire protection solutions, including sprinkler systems,
-              fire alarm systems, fire suppression systems, and more.
+              Activo Fire Science is a leading provider of fire suppression
+              solutions for a wide range of applications. Our company was
+              founded by a team of experts in the fire safety industry and we
+              have been helping our clients protect their people property and
+              assets from danger of fire. We offer full range of fire
+              suppression systems including device -integrated systems,
+              automatic sprinkler systems, and handheld fire extinguishers. Our
+              team of experience professionals help clients design and install
+              the right fire suppression systems for individual needs and
+              requirements.
             </p>
             <br />
             <p className="second" data-aos="fade-left">
-              At Activo Fire Science Ltd, we take pride in the quality of our
-              work and the level of service we provide to our customers. We
-              understand the importance of fire safety and are committed to
-              helping you protect your property and those who use it. Contact us
-              today to learn more about how we can help you keep your property
-              safe from fire.
+              We also offer ongoing maintenance and support to ensure clients
+              systems remain effective. We serve a wide range of industries,
+              including commercial, industrial, residential and public
+              buildings. Our products and services are designed to meet the
+              specific needs of our customer. We are proud to be a trusted
+              partner and a customer focused company in the field of fire safety
+              and prevention. We strive to be a positive force in our world,
+              making it a safer and more resilient place to live for everyone.
             </p>
           </div>
         </div>

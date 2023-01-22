@@ -115,7 +115,7 @@ const Carousel = () => {
             products for commercial and industrial properties.
           </p>
           <div className="readMoreContainer">
-            <a className="read-more" href="#">
+            <a className="read-more" href="#know">
               Read More
             </a>
             <a className="call-us2" href="tel: +2348033907077">

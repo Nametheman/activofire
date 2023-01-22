@@ -11,6 +11,9 @@ import testing from "./Images/fotos/2.jpg";
 import protocol from "./Images/fotos/3.jpg";
 import management from "./Images/fotos/4.jpg";
 import support from "./Images/fotos/5.jpg";
+import alarm from "./Images/fotos/6.png";
+import install from "./Images/fotos/7.jpeg";
+import FAQ from "./components/FAQ";
 
 function App() {
   const [modaldata, setmodaldata] = useState();
@@ -45,6 +48,12 @@ function App() {
       title: " After Sales Support",
       body: "Activo do offer comprehensive after sales support and maintenance policies to ensure that its clients are fully satisfied with their products and services. These policies may include provisions for ongoing maintenance and support, as well as warranties and guarantees. Some specific examples of after sales support and maintenance services that Activo may offer include: Technical support: Activo provides technical support to help clients troubleshoot any issues they may have with their products or services. This may include phone and email support, as well as remote access to Activo's technical support team. Maintenance and repairs: Activo offers maintenance and repair services to keep its products and services in good working order. This may include periodic inspections, maintenance visits, and repairs as needed.Upgrades and updates: Activo may offer upgrades and updates to its products and services to ensure that they are up to date with the latest technology and features. Warranties and guarantees: Activo may offer warranties and guarantees on its products and services to provide its clients with additional peace of mind. These may include warranties on materials and workmanship, as well as guarantees on the performance of the products and services. Overall, Activo's after sales support and maintenance policies are designed to provide its clients with the support and assurance they need to fully utilize and benefit from their products and services.",
     },
+    { id: "s6", title: "Fire Alarm Design Software", image: alarm },
+    {
+      id: "s7",
+      title: "Procurement, Supply and Installation of Equipment",
+      image: install,
+    },
   ];
   const readMoreHandler = (id) => {
     const modalData = ExtraServicesData.find((service) => service.id === id);
@@ -66,6 +75,8 @@ function App() {
         <Carousel />
         <section className="services" id="services">
           <Services />
+        </section>
+        <section id="know">
           <ExtraServices
             isOpen={isOpen}
             setIsOpen={setIsOpen}
@@ -74,6 +85,9 @@ function App() {
         </section>
         <section className="about" id="about">
           <About />
+        </section>
+        <section>
+          <FAQ />
         </section>
         <section className="contact" id="contact">
           <Contact />

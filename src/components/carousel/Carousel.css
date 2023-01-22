@@ -29,6 +29,7 @@
   /* text-align: center; */
 }
 .companyName h3 {
+  font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
   font-size: 150px;
 }
@@ -102,12 +103,14 @@
 .logo h3 {
   color: #ffffff;
   font-size: 40px;
+  font-family: "Roboto", sans-serif;
 }
 .logo p {
   color: #f9b2aa;
   position: relative;
   font-size: 10px;
   line-height: 1px;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 1.8px;
 }
 .logo p::after {
@@ -396,6 +399,11 @@
     margin-top: 30px;
   }
 }
+@media screen and (max-width: 513px) {
+  .companyName h3 {
+    font-size: 120px;
+  }
+}
 @media screen and (max-width: 490px) {
   .cta-content h2 {
     font-size: 30px;
@@ -409,6 +417,9 @@
   .cta-content .welcome {
     font-size: 12px;
   }
+  .companyName h3 {
+    font-size: 120px;
+  }
 }
 @media screen and (max-width: 440px) {
   .cta-content h2 {
@@ -416,6 +427,27 @@
   }
   .mobile-nav {
     display: block;
+  }
+  .companyName h3 {
+    font-size: 80px;
+  }
+  .fireScience::after,
+  .fireScience::before {
+    width: 40px;
+  }
+  .fireScience::before {
+    left: 45px;
+  }
+  .fireScience::after {
+    right: 45px;
+  }
+  .cta-content .intro {
+    margin: 20px auto;
+    font-size: 12px;
+    /* margin-left: auto; */
+  }
+  .readMoreContainer {
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 400px) {
