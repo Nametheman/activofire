@@ -25,6 +25,10 @@ const Carousel = () => {
     setTimeout(() => {
       setCurrent(current === length - 1 ? 0 : current + 1);
     }, 5000);
+
+    return () => {
+      clearTimeout();
+    };
   }, [current]);
 
   if (!Array.isArray(imageData) || imageData.length <= 0) {

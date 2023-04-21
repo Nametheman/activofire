@@ -1,5 +1,5 @@
 .carousel {
-  height: 700px;
+  height: 90vh;
 }
 
 .imageContainer {
@@ -12,7 +12,6 @@
 }
 .imageContainer.active {
   width: 100%;
-  max-width: 1280px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,12 +30,13 @@
 .companyName h3 {
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
-  font-size: 150px;
+  font-size: 250px;
 }
 .fireScience {
   position: relative;
   letter-spacing: 3px;
   margin-top: -10px;
+
   color: #f9b2aa;
   font-size: small;
 }
@@ -58,16 +58,15 @@
 }
 .image {
   object-fit: cover;
-  height: 540px;
+  height: 90vh;
   width: 100%;
 }
 .cta {
   position: absolute;
-  max-width: 1280px;
   top: 0;
   background-color: rgba(0, 0, 0, 0.768);
   width: 100%;
-  height: 540px;
+  height: 90vh;
 }
 .menu-btn {
   position: fixed;
@@ -175,6 +174,7 @@
   margin-left: 6px;
   letter-spacing: 3px;
   color: #ffffff;
+  font-size: 20px;
 }
 .cta-content h2 {
   font-family: "Syncopate", sans-serif;
